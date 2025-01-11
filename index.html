@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./styles.css"> 
+</head>
+<body>
+    <div class="container">
+        <!-- Header with search box -->
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter city location" class="input-box">
+                <button id="searchBtn" class="fa-solid fa-magnifying-glass"></button>
+            </div>
+        </div>
+
+        <!-- Main weather body -->
+        <div class="weather-body">
+            <img id="weather-img" src="./assets/cloud.png" alt="Weather icon">
+
+            <div class="weather-box">
+                <p class="temperature">0 <sup>°C</sup></p>
+                <p class="description">Light rain</p>
+            </div>
+
+            <div class="weather-details">
+                <!-- Humidity -->
+                <div class="humidity">
+                    <i class="fa-sharp fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <!-- Wind Speed -->
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">45 Km/H</span>
+                        <p>Wind speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/a152478d19.js" crossorigin="anonymous"></script>
+</body>
+</html>
